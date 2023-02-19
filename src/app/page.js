@@ -1,13 +1,14 @@
-import Image from 'next/image'
+"use client"
+
 import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import { Input } from '@material-tailwind/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className="border-2 border-red-500" >
-      HELLO WORLD
+    <div className="w-72">
+      <Input label="Username" />
     </div>
   )
 }
