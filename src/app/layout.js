@@ -1,3 +1,5 @@
+"use client"
+
 import './globals.css'
 
 export default function RootLayout({ children }) {
@@ -8,7 +10,8 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+
+      <body className='h-screen overflow-y-hidden bg-[#c5e4e7]'>{children}</body>
     </html>
   )
 }
