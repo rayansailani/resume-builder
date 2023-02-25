@@ -5,12 +5,26 @@
 body {
   margin: 0;
   scroll-behavior: smooth;
-
   font-family: 'Manrope', sans-serif;
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
 
+/* width */
 .form-container::-webkit-scrollbar {
-  display: none;
+  width: 15px;
+}
+
+/* Track */
+.form-container::-webkit-scrollbar-track {
+  border-radius: 100px;
+  margin-top: 40px;
+}
+
+/* Handle */
+.form-container::-webkit-scrollbar-thumb {
+  background: #878787;
+  border-radius: 100px;
+  background-clip: content-box;
+  border: solid 5px transparent;
 }
