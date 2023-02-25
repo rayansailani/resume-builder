@@ -9,22 +9,29 @@ body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-
-/* width */
 .form-container::-webkit-scrollbar {
   width: 15px;
 }
 
-/* Track */
 .form-container::-webkit-scrollbar-track {
   border-radius: 100px;
   margin-top: 40px;
 }
 
-/* Handle */
 .form-container::-webkit-scrollbar-thumb {
-  background: #878787;
+  background-color: #26c0ab46;
   border-radius: 100px;
   background-clip: content-box;
   border: solid 5px transparent;
 }
+
+.form-container::-webkit-scrollbar-thumb:hover {
+  background-color: #26c0ab;
+}
+
+.form-container {
+  transition: background-color; 
+  transition-duration: all;
+}
+
+
