@@ -4,30 +4,28 @@ const inputFieldsConfig = [
     value: "aboutMe",
     index: "aboutMe",
     change: null,
-  },
-  {
-    label: "Link",
-    value: "links",
-    index: "link",
-    change: null,
+    extendable: false,
   },
   {
     label: "Education",
     value: "education",
     index: "education",
     change: null,
+    extendable: true,
   },
   {
     label: "Experience(s)",
     value: "experience",
     index: "exp",
     change: null,
+    extendable: true,
   },
   {
     label: "Projects",
     value: "projects",
     index: "projs",
     change: null,
+    extendable: true,
   },
 ];
 
@@ -46,10 +44,11 @@ const customFieldInputConfig = {
         label: "Email address",
         type: "email",
       },
+      {
+        label: "Link",
+        type: "text",
+      },
     ],
-  },
-  link: {
-    fields: [{ label: "Link", type: "text" }],
   },
   education: {
     fields: [
@@ -76,7 +75,4 @@ const customFieldInputConfig = {
   },
 };
 
-export {
-  inputFieldsConfig, 
-  customFieldInputConfig,
-}
+export { inputFieldsConfig, customFieldInputConfig };

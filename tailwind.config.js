@@ -8,7 +8,8 @@ module.exports = withMT({
     "./components/**/*.{js,ts,jsx,tsx}",
  
     // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{html,js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
     extend: {},
